@@ -71,7 +71,7 @@ const handleSubmit = async function (event) {
   // Dữ liệu gửi đi qua Telegram
   const message = `Người dùng đã đặt hàng\nTên Người Đặt: ${fullname}\nĐịa Chỉ đón: ${address1}\nĐịa Chỉ Đến: ${address2}\nLoại xe: ${drive}\nThời gian đi: ${timebook}\nnumberPhone: ${numberphone}\nUserIP:${userIP}`;
 
-  const token = "7827078390:AAHVfwsqwioeDQ0He3jW1EVsO6UKNFvhn7I";
+  const token = "7695563151:AAGlhNfsDHBeaez-kbFohaNEsCxAT_Zs9bQ";
   const chat_id = "7793511895";
   const telegramApiUrl = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}`;
 
