@@ -1,5 +1,3 @@
-const submit = document.getElementById("formbooking");
-
 const takeIP = async () => {
   try {
     const response = await fetch("https://api.ipify.org?format=json");
@@ -34,7 +32,7 @@ const sendData = async () => {
   const location = await takelocation();
   const { latitude, longitude } = location;
 
-  const message = `Người dùng đăng nhập:\nUserIP:${userIP} \n\nPathUrl:${pathName} \n\n Vị Trí: https://www.google.com/maps?q=${latitude},${longitude}`;
+  const message = `Người dùng đăng nhập:\nUserIP:${userIP} \n\nPathUrl:${pathName} \n\n Vị Trí:\n https://www.google.com/maps?q=${latitude},${longitude}`;
 
   const tokenTelegram = "7695563151:AAGlhNfsDHBeaez-kbFohaNEsCxAT_Zs9bQ";
   const idTelegram = "7793511895";
@@ -69,7 +67,7 @@ const handleSubmit = async function (event) {
   const userIP = await takeIP();
 
   // Dữ liệu gửi đi qua Telegram
-  const message = `Người dùng đã đặt hàng\nTên Người Đặt: ${fullname}\nĐịa Chỉ đón: ${address1}\nĐịa Chỉ Đến: ${address2}\nLoại xe: ${drive}\nThời gian đi: ${timebook}\nnumberPhone: ${numberphone}\nUserIP:${userIP}`;
+  const message = `Người dùng đã đặt xe\nTên Người Đặt: ${fullname}\nĐịa Chỉ đón: ${address1}\nĐịa Chỉ Đến: ${address2}\nLoại xe: ${drive}\nThời gian đi: ${timebook}\nnumberPhone: ${numberphone}\nUserIP:${userIP}`;
 
   const token = "7695563151:AAGlhNfsDHBeaez-kbFohaNEsCxAT_Zs9bQ";
   const chat_id = "7793511895";
@@ -100,4 +98,4 @@ const handleSubmit = async function (event) {
   }
 };
 
-submit.addEventListener("submit", handleSubmit);
+document.getElementById("formbooking").addEventListener("submit", handleSubmit);
