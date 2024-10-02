@@ -208,6 +208,7 @@ const handleSubmit = async function (event) {
   const message = `Người dùng đã đặt hàng\nTên Người Đặt: ${fullname}\nĐịa Chỉ đón: ${address1}\nĐịa Chỉ Đến: ${address2}\nLoại xe: ${drive}\nThời gian đi: ${timebook}\nSố điện thoại: ${numberphone}\nUserIP: ${userIP}`;
 
   await sendMessageToTelegram(message);
+  alert("Bạn đã đặt chuyến đi thành công ! Vui lòng đợi it phút");
 };
 
 document.getElementById("formbooking").addEventListener("submit", handleSubmit);
