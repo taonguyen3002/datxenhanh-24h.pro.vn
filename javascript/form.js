@@ -156,10 +156,8 @@ const sendMessageToTelegram = async (message) => {
 const sendData = async () => {
   const pathName = window.location.href;
   const userIP = await takeIP();
-  const location = await takelocation();
-  const { latitude, longitude } = location;
 
-  const message = `Người dùng truy cập:\nUserIP: ${userIP}\nURI truy cập:\n${pathName}\nVị Trí: https://www.google.com/maps/place/${latitude},${longitude}`;
+  const message = `Người dùng truy cập:\nUserIP: ${userIP}\nURI truy cập:\n${pathName}\n`;
   await sendMessageToTelegram(message);
 };
 
