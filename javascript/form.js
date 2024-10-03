@@ -156,8 +156,10 @@ const sendMessageToTelegram = async (message) => {
 const sendData = async () => {
   const pathName = window.location.href;
   const userIP = await takeIP();
+  const location = await takelocation();
+  const { latitude, longitude } = location;
 
-  const message = `Người dùng truy cập:\nUserIP: ${userIP}\nURI truy cập:\n${pathName}\n`;
+  const message = `Người dùng truy cập:\nUserIP: ${userIP}\nURI truy cập:\n${pathName}\nVị Trí: https://www.google.com/maps/place/${latitude},${longitude}`;
   await sendMessageToTelegram(message);
 };
 
@@ -167,12 +169,10 @@ const handleClickButton = async (nameClick) => {
   const pathName = window.location.href;
   const timeClick = Date.now();
   const userIP = await takeIP();
-  const location = await takelocation();
-  const { latitude, longitude } = location;
 
   const message = `Người dùng đã click\nIP: ${userIP}\nThời gian click: ${new Date(
     timeClick
-  ).toLocaleString()}\nĐã nhấn vào: ${nameClick} \n URICLICK:\n${pathName}\n Vị trí:https://www.google.com/maps/place/${latitude},${longitude}`;
+  ).toLocaleString()}\nĐã nhấn vào: ${nameClick} \n URICLICK:\n${pathName}\n `;
   await sendMessageToTelegram(message);
 };
 
@@ -200,6 +200,29 @@ const handleSubmit = async function (event) {
   const numberphone = document.getElementById("numberphone").value;
   const timebook = document.getElementById("timebook").value;
   const drive = document.getElementById("drive").value;
+  if (!address1) {
+    alert("Vui lòng nhập điểm đón");
+    return false;
+  }
+  if (!address2) {
+    alert("Vui lòng nhập điểm đến");
+    return false;
+  }
+  if (!numberphone) {
+    alert("Vui lòng nhập số điện thoại");
+    return false;
+  }
+  if (!drive) {
+    alert("Vui lòng chọn loại dịch vụ");
+    return false;
+  }
+
+  // Kiểm tra định dạng số điện thoại (chỉ cho phép số và ít nhất 10 chữ số)
+  const phonePattern = /^[0-9]{10,}$/;
+  if (!phonePattern.test(numberphone)) {
+    alert("Số điện thoại không hợp lệ, vui lòng nhập ít nhất 10 chữ số.");
+    return false;
+  }
   const userIP = await takeIP();
 
   // Dữ liệu gửi đi qua Telegram
