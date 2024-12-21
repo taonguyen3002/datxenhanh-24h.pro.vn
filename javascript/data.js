@@ -1,12 +1,5 @@
 let posts = [
   {
-    id: 1,
-    title:
-      "Đặt Xe Grab Đồng Nai - Số Điện Thoại Tổng Đài Đặt Xe Ôm Taxi Giao Hàng 0559 023 567",
-    link: "https://datxenhanh-24h.pro.vn",
-    img: "../assets/image/grab.jpg",
-  },
-  {
     id: 2,
     title:
       "Đặt Xe Grab Đồng Nai - Tổng Đài Đặt Xe Ôm Taxi Giao Hàng 0559 023 567",
@@ -49,7 +42,7 @@ let posts = [
     img: "../assets/image/grab.jpg",
   },
   {
-    id: 7,
+    id: 1,
     title:
       "Đặt Xe Grab Long Khánh Đồng Nai - Tổng Đài Đặt Xe Ôm Taxi Giao Hàng Long Khánh 0559 023 567",
     link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/grab-long-khanh",
@@ -91,9 +84,11 @@ function displayPosts(posts) {
     postElement.className = "";
     postElement.innerHTML = `<article><figure><img src="${
       post.img || ""
-    }" alt="${post.title}" loading="lazy" /></figure><h3 ><a href="${
-      post.link
-    }">${post.title}</a></h3></article>`;
+    }" alt="${
+      post.title
+    }" loading="lazy" /></figure><h3 ><a target="_blank" href="${post.link}">${
+      post.title
+    }</a></h3></article>`;
     postsContainer.appendChild(postElement);
   });
 }
