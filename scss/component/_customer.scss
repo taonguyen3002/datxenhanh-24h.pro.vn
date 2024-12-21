@@ -1,0 +1,136 @@
+@use "../abstracts";
+.customer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  &__title {
+    text-align: center;
+    color: #5bc641;
+    font-size: 3.8rem;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: rgb(0 0 0) 1px 1px 1px;
+    margin-bottom: 30px;
+  }
+  &__desc {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    strong {
+      color: #ffaf18;
+    }
+  }
+  &__list {
+    @include abstracts.screen(xl) {
+      --grid-gutter-y: 30px;
+    }
+  }
+  &__item {
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+  }
+  &__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 114px;
+    background: #0866ff;
+    border-radius: 99px;
+    height: 114px;
+    margin: 30px auto 20px;
+    @include abstracts.screen(xl) {
+      margin: 30px auto;
+      width: 160px;
+      height: 160px;
+    }
+    @include abstracts.screen(xl) {
+      margin: 20px auto;
+      width: 140px;
+      height: 140px;
+    }
+  }
+  &__thumb {
+    width: 110px;
+    height: 110px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 99px;
+    object-fit: cover;
+    @include abstracts.screen(xl) {
+      width: 150px;
+      height: 150px;
+    }
+    @include abstracts.screen(md) {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    @include abstracts.screen(xl) {
+      margin-bottom: 20px;
+      font-size: 1.9rem;
+    }
+    @include abstracts.screen(xl) {
+      margin-bottom: 15px;
+    }
+  }
+  &__job {
+    color: red;
+    font-weight: 400;
+    font-size: 1.5rem;
+    @include abstracts.screen(xl) {
+      font-size: 1.6rem;
+    }
+  }
+  &__content {
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background: #4480e2;
+    @include abstracts.screen(xl) {
+      padding: 30px;
+    }
+    @include abstracts.screen(md) {
+      padding: 20px;
+    }
+  }
+  &__commemt {
+    color: #fff;
+    height: 120px;
+    line-height: 130%;
+    @include abstracts.screen(xl) {
+      line-height: 140%;
+      height: 100px;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0 20px;
+    @include abstracts.screen(xl) {
+      gap: 15px;
+      margin: 20px 0 20px;
+    }
+  }
+}
+.social {
+  &__wrap {
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: #ccc;
+    min-width: 38px;
+  }
+  &__group {
+    background: #0866ff;
+    padding: 3px;
+  }
+}

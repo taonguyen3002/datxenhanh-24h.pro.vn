@@ -1,0 +1,198 @@
+@use "../abstracts";
+.post {
+  &__rate {
+    &-icon {
+      width: 25px;
+      margin-right: 5px;
+      @include abstracts.screen(lg) {
+        margin-right: 0;
+      }
+      @include abstracts.screen(sm) {
+        width: 20px;
+      }
+    }
+    &-info {
+      font-size: 1.8rem;
+      font-weight: 500;
+      @include abstracts.screen(sm) {
+        font-size: 1.6rem;
+      }
+    }
+    &-star {
+      align-items: center;
+    }
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    @include abstracts.screen(lg) {
+      margin-top: 30px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 60%;
+      bottom: 0;
+      border-radius: 99px;
+      left: 50%;
+      translate: -50% 0;
+      background-color: #000;
+    }
+  }
+  &__sapo {
+    &-text {
+      text-align: start;
+      position: relative;
+      font-weight: 500;
+      font-size: 2.3rem;
+      line-height: 1.5;
+      padding-left: 15px;
+      margin-top: 60px;
+      @include abstracts.screen(lg) {
+        font-size: 1.8rem;
+        font-weight: 400;
+        height: 135px;
+        overflow-y: auto;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        background: red;
+        border-radius: 999px;
+        left: 0;
+        top: 50%;
+        translate: 0 -50%;
+        @include abstracts.screen(lg) {
+          height: 135px;
+        }
+      }
+    }
+  }
+  &__media {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    border-radius: 30px 0 30px 0;
+    background: #13d664c0;
+    @include abstracts.screen(md) {
+      padding-top: 68%;
+    }
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px 0 30px 0;
+  }
+  &__title {
+    line-height: 1.5;
+    margin: 30px 0;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #ed1d26;
+  }
+  &__list {
+    margin-top: 30px;
+  }
+  &__sub-title {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 2.3rem;
+    line-height: 1.44;
+  }
+  &__desc {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    @include abstracts.screen(lg) {
+      font-size: 1.3rem;
+      line-height: 1.45;
+    }
+  }
+  &__end {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.44;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &__inner {
+    margin: 40px 0;
+  }
+  &__icon {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(79%) saturate(6963%)
+      hue-rotate(348deg) brightness(93%) contrast(100%);
+    margin-right: 10px;
+  }
+  &__link--blue {
+    color: royalblue;
+  }
+  &__table-list {
+    margin-top: 15px;
+  }
+  &__table-item {
+    font-weight: 300;
+    line-height: 1.45;
+    font-size: 1.5rem;
+  }
+  &__item {
+    &-list {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    &-item {
+      position: relative;
+      font-size: 1.5rem;
+      padding-left: 25px;
+      font-weight: 200;
+      line-height: 1.45;
+      + .post__item-item {
+        margin-top: 20px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 8px;
+        border: 2.5px solid;
+        rotate: -45deg;
+        left: 0;
+        top: 50%;
+        translate: 0 -50%;
+        border-color: transparent transparent black black;
+      }
+    }
+  }
+  // post express
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 30px;
+    margin-top: 30px;
+    border-bottom: 1.5px solid #ccc;
+  }
+  &__wrap-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
