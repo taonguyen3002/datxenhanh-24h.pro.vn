@@ -83,6 +83,13 @@ let posts = [
     link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/grab-bien-hoa/grab-long-binh",
     img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
   },
+  {
+    id: 13,
+    title:
+      "Đặt Xe Grab An Bình Biên Hòa - Tổng Đài Đặt Xe Ôm Taxi Giao Hàng Grab An Bình 0559 023 567",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/grab-bien-hoa/grab-an-binh",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
 ];
 
 function fetchPosts() {
