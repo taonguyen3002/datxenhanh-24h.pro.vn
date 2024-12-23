@@ -113,6 +113,18 @@ let posts = [
     link: "https://datxenhanh-24h.pro.vn/blogs/grab-hai-phong",
     img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
   },
+  {
+    id: 16,
+    title: "Đặt Xe Grab Long An",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-long-an",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 17,
+    title: "Đặt Xe Grab Bình Dương",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-binh-duong",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
 ];
 
 function fetchPosts() {
