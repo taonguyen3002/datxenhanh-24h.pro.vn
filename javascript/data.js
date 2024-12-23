@@ -95,6 +95,24 @@ let posts = [
     link: "https://datxenhanh-24h.pro.vn/blogs/grab-an-giang",
     img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
   },
+  {
+    id: 15,
+    title: "Đặt Xe Grab Hà Nội",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-ha-noi",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 15,
+    title: "Đặt Xe Grab Thanh Hóa",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-thanh-hoa",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 15,
+    title: "Đặt Xe Grab Hải Phòng",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-hai-phong",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
 ];
 
 function fetchPosts() {
