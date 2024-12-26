@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /template/
 Disallow: /cgi-bin/
 Sitemap: https://datxenhanh-24h.pro.vn.pro/sitemap.xml

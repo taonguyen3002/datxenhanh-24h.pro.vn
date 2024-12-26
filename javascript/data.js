@@ -125,6 +125,78 @@ let posts = [
     link: "https://datxenhanh-24h.pro.vn/blogs/grab-binh-duong",
     img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
   },
+  {
+    id: 18,
+    title: "Đặt Xe Grab Bình Thuận",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-binh-thuan",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 19,
+    title: "Đặt Xe Grab Tiền Giang",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-tien-giang",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 20,
+    title: "Đặt Xe Grab Tây Ninh",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-tay-ninh",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 21,
+    title: "Đặt Xe Grab Kiên Giang",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-kien-giang",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 22,
+    title: "Đặt Xe Grab Cần Thơ",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-can-tho",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 23,
+    title: "Đặt Xe Grab Bình Phước",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-binh-phuoc",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 24,
+    title: "Đặt Xe Grab Bến Tre",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-ben-tre",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 25,
+    title: "Đặt Xe Grab Bạc Liêu",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-bac-lieu",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 26,
+    title: "Đặt Xe Grab Bà Rịa Vũng Tàu",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-ba-ria-vung-tau",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 27,
+    title: "Đặt Xe Grab Hố Nai Biên Hòa",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/grab-bien-hoa/grab-ho-nai",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 28,
+    title: "Đặt Xe Grab Tam Hiệp Biên Hòa",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/grab-bien-hoa/grab-tam-hiep",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
+  {
+    id: 29,
+    title: "Đặt Xe Grab Phước Tân Biên Hòa",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/grab-bien-hoa/grab-phuoc-tan",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
 ];
 
 function fetchPosts() {
