@@ -197,6 +197,13 @@ let posts = [
     link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/grab-bien-hoa/grab-phuoc-tan",
     img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
   },
+  {
+    id: 30,
+    title:
+      "Số Điện Thoại Grab Tại Biên Hoà - Hướng Dẫn Đặt Grab Biên Hoà Qua Website",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/so-dien-thoai-grab-bien-hoa",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
 ];
 
 function fetchPosts() {
