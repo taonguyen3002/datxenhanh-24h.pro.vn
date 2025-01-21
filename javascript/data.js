@@ -204,6 +204,12 @@ let posts = [
     link: "https://datxenhanh-24h.pro.vn/blogs/grab-dong-nai/so-dien-thoai-grab-bien-hoa",
     img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
   },
+  {
+    id: 31,
+    title: "Hướng Dẫn Đặt Grab Qua Website",
+    link: "https://datxenhanh-24h.pro.vn/blogs/grab-xe-om-taxi-gan-day",
+    img: "https://datxenhanh-24h.pro.vn/assets/image/grab.jpg",
+  },
 ];
 
 function fetchPosts() {
